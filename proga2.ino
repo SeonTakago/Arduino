@@ -40,7 +40,7 @@ void calc_amp() {
   for (int k = 0; k < 32; k++) {
     emg1 = analogRead(A0);
     emg2 = analogRead(A1);
-    pot = analogRead(A2);
+    pot = analogRead(A3);
     emg1 = map(emg1, 0, 1023, 0, 255);
     emg2 = map(emg2, 0, 1023, 0, 255);
         if (emg1 > max1)
